@@ -1,0 +1,55 @@
+/* App.css */
+.app-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.chat-window {
+  border: 1px solid #ccc;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-wrapper {
+  margin: 10px 0;
+}
+
+/* Căn lề tin nhắn dựa trên vai trò */
+.message-wrapper.user {
+  text-align: right;
+}
+
+.message-wrapper.gemini {
+  text-align: left;
+}
+
+.message-bubble {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Màu sắc tin nhắn */
+.user .message-bubble {
+  background-color: #e1ffc7;
+}
+
+.gemini .message-bubble {
+  background-color: #f0f0f0;
+}
+
+.input-area {
+  display: flex;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+}
+
+.send-button {
+  padding: 10px;
+}

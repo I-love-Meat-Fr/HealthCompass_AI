@@ -1,0 +1,108 @@
+/* Container chính cho toàn bộ Form */
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Tiêu đề */
+.form-container h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Từng cụm nhập liệu */
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nhãn (Label) */
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+
+/* Ô nhập liệu và Textarea */
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #f9f9f9;
+}
+
+/* Hiệu ứng khi nhấn vào ô nhập liệu */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  background-color: #fff;
+}
+
+/* Tùy chỉnh riêng cho Textarea */
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Nút Submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+/* Hiệu ứng nút khi di chuột */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+.result-container {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f0f7ff;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.result-container h3 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.analysis-text {
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap; /* Quan trọng: Giữ lại các khoảng xuống dòng từ AI */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
