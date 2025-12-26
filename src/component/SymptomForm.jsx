@@ -1,5 +1,5 @@
 import React from "react";
-import "./UserForm.css";
+import "./SymptomForm.css";
 
 import { useUserSymptom } from "./useUserSymptom";
 export const SymptomForm = () => {

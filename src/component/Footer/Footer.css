@@ -1,0 +1,100 @@
+.footer {
+  background: #f8fafc;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 60px 0 20px 0;
+  color: #475569;
+  margin-top: auto; /* Đẩy footer xuống dưới cùng nếu trang ít nội dung */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Chia cột: Cột 1 rộng gấp đôi */
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.footer-logo span {
+  color: #22c55e;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-section h4 {
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #64748b;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #64748b;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-logo, .social-icons {
+    justify-content: center;
+  }
+}

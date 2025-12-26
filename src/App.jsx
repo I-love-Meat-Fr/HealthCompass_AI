@@ -9,8 +9,8 @@ import GeminiUI from "./component/GeminiUI.jsx";
 import { Navbar } from "./component/Navbar/Navbar.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./component/Home.jsx";
-
-
+import { NutritionAnalyzerForm} from "./component/NutritionAnalyzerForm.jsx";
+import { Footer } from "./component/Footer/Footer";
 
 function App() {
   return (
@@ -24,8 +24,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/diagnosis" element={<SymptomForm />} />
+            <Route path="/nutrition" element={<NutritionAnalyzerForm />} />
           </Routes>
         </div>
+        <Footer />  
       </div>
     </Router>
   );

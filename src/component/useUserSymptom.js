@@ -65,6 +65,7 @@ const handleSubmit = (e) => {
     // alert("Cập nhật thông tin thành công!");
     handleSend(); // Gọi AI phân tích
   };
+
 //e.preventDefault(): Mặc định khi bấm nút submit, trình duyệt sẽ tải lại trang (F5). Dòng này ngăn việc đó lại để ứng dụng React chạy mượt mà không bị ngắt quãng.
 
 //formData: Lúc này toàn bộ dữ liệu người dùng đã nằm gọn trong biến này, sẵn sàng để gửi đi.

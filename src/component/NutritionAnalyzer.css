@@ -1,0 +1,80 @@
+/* Container chính */
+.nutrition-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Tiêu đề */
+.nutrition-container h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Khu vực Upload */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Nút bấm */
+.btn-analyze {
+  background-color: #10b981; /* Màu xanh lá thân thiện */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-analyze:hover:not(:disabled) {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.btn-analyze:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Kết quả */
+.result-box {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-left: 4px solid #10b981;
+  border-radius: 8px;
+  line-height: 1.6;
+  color: #374151;
+  white-space: pre-wrap; /* Giữ định dạng xuống dòng từ AI */
+}
+
+.result-box h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #059669;
+}
+
+.analyses-text {
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap; /* Quan trọng: Giữ lại các khoảng xuống dòng từ AI */
+}

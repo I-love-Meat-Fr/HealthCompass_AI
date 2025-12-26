@@ -1,33 +1,90 @@
+/* Navbar Container */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85); /* Hiệu ứng kính */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Đẩy Logo sang trái, Menu sang phải */
+  justify-content: space-between;
   align-items: center;
-  background-color: #007bff; /* Màu xanh y tế */
-  padding: 15px 30px;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0 20px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1e293b;
 }
 
 .navbar-logo h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0;
-  font-size: 1.5rem;
 }
 
+.navbar-logo span {
+  color: #22c55e; /* Màu xanh lá đại diện cho sức khỏe */
+}
+
+/* Menu Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px; /* Khoảng cách giữa các mục menu */
+  gap: 8px;
   margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
-  color: white;
+  color: #64748b;
   font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  font-size: 0.95rem;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
 }
 
-.nav-links li a:hover {
-  color: #ffcc00; /* Màu vàng khi di chuột vào */
+/* Hiệu ứng khi Hover và khi Active (Trang đang mở) */
+.nav-links li a:hover, 
+.nav-links li a.active {
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.08);
+}
+
+.nav-links li a.active {
+  font-weight: 600;
+}
+
+/* Nút bấm hành động */
+.btn-get-started {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-get-started:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
