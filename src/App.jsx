@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./component/Home.jsx";
 import { NutritionAnalyzerForm} from "./component/NutritionAnalyzerForm.jsx";
 import { Footer } from "./component/Footer/Footer";
+import { ComingSoon } from "./component/ComingSoon.jsx";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/diagnosis" element={<SymptomForm />} />
             <Route path="/nutrition" element={<NutritionAnalyzerForm />} />
-          </Routes>
+            <Route path="/chat" element={<ComingSoon />} />
+          </Routes>                                 
         </div>
         <Footer />  
       </div>

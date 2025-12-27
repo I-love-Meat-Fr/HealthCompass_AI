@@ -25,7 +25,7 @@ export const SymptomForm = () => {
 
   return (
     <div className="form-container">
-      <h3>Thông tin</h3>
+      <h3>THÔNG TIN</h3>
       <form onSubmit={onFormSubmit}>
         <div className="form-group">
           <label>Tuổi</label>
@@ -38,7 +38,7 @@ export const SymptomForm = () => {
           />
         </div>
         <div className="form-group">
-          <label>height</label>
+          <label>Chiều cao</label>
           <input
             type="number"
             name="height"

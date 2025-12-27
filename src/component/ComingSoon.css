@@ -1,0 +1,124 @@
+.coming-soon-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: radial-gradient(circle at center, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.coming-soon-card {
+  max-width: 550px;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 32px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.icon-container {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.status-badge {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.coming-soon-card h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.coming-soon-card h1 span {
+  color: #007bff;
+  background: linear-gradient(90deg, #007bff, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coming-soon-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.coming-soon-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn-back, .btn-notify {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.btn-back {
+  background: #f1f5f9;
+  color: #475569;
+  border: none;
+}
+
+.btn-back:hover {
+  background: #e2e8f0;
+}
+
+.btn-notify {
+  background: #1e293b;
+  color: white;
+  border: none;
+}
+
+.btn-notify:hover {
+  background: #0f172a;
+  transform: translateY(-2px);
+}
+
+/* Progress Bar */
+.progress-container {
+  text-align: left;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #22c55e);
+  border-radius: 10px;
+}

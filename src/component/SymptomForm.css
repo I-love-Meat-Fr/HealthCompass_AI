@@ -48,7 +48,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #059669;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
   background-color: #fff;
 }
@@ -63,7 +63,7 @@
 button[type="submit"] {
   width: 100%;
   padding: 0.75rem;
-  background-color: #007bff;
+  background-color: #059669;
   color: white;
   border: none;
   border-radius: 6px;
@@ -76,7 +76,7 @@ button[type="submit"] {
 
 /* Hiệu ứng nút khi di chuột */
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #059669;
 }
 
 button[type="submit"]:active {
@@ -86,13 +86,13 @@ button[type="submit"]:active {
   margin-top: 25px;
   padding: 20px;
   background-color: #f0f7ff;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid #059669;
   border-radius: 8px;
   animation: fadeIn 0.5s ease-in;
 }
 
 .result-container h3 {
-  color: #0056b3;
+  color: #059669;
   margin-bottom: 10px;
 }
 

@@ -53,7 +53,14 @@ export const Home = () => {
       {/* 2. FEATURES SECTION */}
       <section className="features-section">
         <div className="section-title">
-          <h2>Tính năng nổi bật</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }} // Ban đầu ẩn và nằm dưới 50px
+            whileInView={{ opacity: 1, y: 0 }} // Khi lướt tới thì hiện lên và về vị trí cũ
+            transition={{ duration: 0.8 }} // Thời gian chuyển động
+            viewport={{ once: false }} // "once: true" để hiệu ứng chỉ chạy 1 lần duy nhất
+          >
+            Tính năng nổi bật
+          </motion.h2>
           <p>Công nghệ hiện đại cho một cuộc sống khỏe mạnh hơn</p>
         </div>
 
