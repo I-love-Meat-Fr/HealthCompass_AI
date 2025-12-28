@@ -40,13 +40,17 @@ const handleSend = async () => {
     try {
       // Tối ưu Prompt để AI phân tích chính xác hơn
       const fullPrompt = `
-        Hãy đóng vai là một chuyên gia tư vấn sức khỏe AI. 
         Thông tin bệnh nhân:
         - Tuổi: ${formData.age}
         - Chiều cao: ${formData.height} cm
         - Cân nặng: ${formData.weight} kg
         - Triệu chứng: ${formData.symptom}
-        Hãy đưa ra phân tích về tình trạng sức khỏe và lời khuyên phù hợp.
+        Các nguồn yêu cầu tham khảo: IDC-11;
+        Hãy đưa ra các chẩn đoán có thể xảy ra, trình bày khoa học, có cấu trúc, nguồn gốc thông tin rõ ràng và hãy đánh mã ICD-11 cho từng chẩn đoán.
+        Hãy liệt kê các bước tiếp theo nên làm (xét nghiệm, thăm khám chuyên khoa...) một cách cụ thể.
+        Chuẩn hóa thông số liệu y khoa và tránh các khuyến nghị mơ hồ.
+        Không cần hỏi lại thêm thông tin.
+        Không cần viết dài dòng văn nói, phải sử dụng văn phong khoa học, đúng chuyên ngành và đúng chuyên môn.
       `;
 
       const result = await model.generateContent(fullPrompt);
