@@ -18,5 +18,15 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url))
     }
   },
-  base: "/"
+  base: "/",
+  server: {
+    proxy: {
+      '/predict': {
+        target: 'http://127.0.0.1:9000/predict', // Địa chỉ Backend Flask của bạn
+        changeOrigin: true,
+        secure: false,
+        // rewrite: (path) => path.replace(/^\/predict/, '/predict') // Giữ nguyên path /predict
+      }
+    }
+  }
 });

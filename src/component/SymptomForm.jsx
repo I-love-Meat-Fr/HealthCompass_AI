@@ -1,7 +1,8 @@
 import React from "react";
 import "./SymptomForm.css";
+import { DiagnosisCard } from "./DiagnosisCard";
 
-import { useUserSymptom } from "./useUserSymptom";
+import { useUserSymptom } from "../hooks/useUserSymptom";
 export const SymptomForm = () => {
   const {
     formData,
@@ -10,6 +11,7 @@ export const SymptomForm = () => {
     handleSend,
     loading,
     analysisResult,
+    diagnosisResults
   } = useUserSymptom();
   const onFormSubmit = (e) => {
     handleSubmit(e); // Gọi hàm ngăn load trang và log dữ liệu
@@ -27,36 +29,6 @@ export const SymptomForm = () => {
     <div className="form-container">
       <h3>THÔNG TIN</h3>
       <form onSubmit={onFormSubmit}>
-        <div className="form-group">
-          <label>Tuổi</label>
-          <input
-            type="number"
-            name="age"
-            placeholder="Age"
-            value={formData.age}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label>Chiều cao</label>
-          <input
-            type="number"
-            name="height"
-            placeholder="Height (cm)"
-            value={formData.height}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label>Cân nặng</label>
-          <input
-            type="number"
-            name="weight"
-            placeholder="Weight (kg)"
-            value={formData.weight}
-            onChange={handleChange}
-          />
-        </div>
         <div className="form-group">
           <label>Triệu chứng</label>
           <textarea
@@ -77,7 +49,7 @@ export const SymptomForm = () => {
         {loading ? (
           <p className="loading-text">AI đang xử lý dữ liệu của bạn...</p>
         ) : (
-          <p className="analysis-text">{analysisResult}</p>
+          <DiagnosisCard diagnosisResults={diagnosisResults} />
         )}
       </div>
     </div>

@@ -10,7 +10,7 @@ export const Navbar = () => {
   const isActive = (path) => (location.pathname === path ? "active" : "");
   
   return (
-    <nav className="navbar">
+    <nav className="navbar"> 
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <HeartPulse size={28} color="#22c55e" />
@@ -33,10 +33,17 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/chest" className={isActive("/chest")}>
+              <MessageSquare size={18} /> Chuẩn đoán phổi
+            </Link>
+          </li>
+          <li>
             <Link to="/chat" className={isActive("/chat")}>
               <MessageSquare size={18} /> AI Chat
             </Link>
           </li>
+          
+                   
         </ul>
 
         <div className="navbar-actions">

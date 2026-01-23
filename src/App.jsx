@@ -12,6 +12,7 @@ import { Home } from "./component/Home.jsx";
 import { NutritionAnalyzerForm} from "./component/NutritionAnalyzerForm.jsx";
 import { Footer } from "./component/Footer/Footer";
 import { ComingSoon } from "./component/ComingSoon.jsx";
+import { ChestXrayForm } from "./component/ChestXrayForm.jsx"; 
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/diagnosis" element={<SymptomForm />} />
             <Route path="/nutrition" element={<NutritionAnalyzerForm />} />
+            <Route path="/chest" element={<ChestXrayForm />} />
             <Route path="/chat" element={<ComingSoon />} />
-          </Routes>                                 
+          </Routes>
         </div>
         <Footer />  
       </div>

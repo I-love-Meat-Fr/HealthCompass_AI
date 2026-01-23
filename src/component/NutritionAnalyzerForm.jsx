@@ -1,5 +1,5 @@
 import React from "react";
-import { useNutritionAnalyzer } from "./useNutritionAnalyzer";
+import { useNutritionAnalyzer } from "../hooks/useNutritionAnalyzer";
 import { motion, AnimatePresence } from "framer-motion";
 import { Upload, Zap, ClipboardList, Info } from "lucide-react";
 import "./NutritionAnalyzer.css";
