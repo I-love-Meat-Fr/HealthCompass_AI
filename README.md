@@ -50,10 +50,22 @@ To run this project in your local environment (optimized for WSL2), follow these
 The project implements **System Instruction** and **Few-shot Prompting** techniques to ensure the Gemini API returns highly accurate, structured **JSON** data. This allows the Backend to process and store health information efficiently.
 
 ## 📸 Screenshots & Demo
-https://github.com/I-love-Meat-Fr/HealthCompass_AI/blob/main/public/images/Screenshot%202026-04-13%20203515.png
-https://github.com/I-love-Meat-Fr/HealthCompass_AI/blob/main/public/images/Screenshot%202026-04-13%20203615.png
-https://github.com/I-love-Meat-Fr/HealthCompass_AI/blob/main/public/images/Screenshot%202026-04-13%20203657.png
-https://github.com/I-love-Meat-Fr/HealthCompass_AI/blob/main/public/images/image.png
+<p align="center">
+<img src="https://raw.githubusercontent.com/I-love-Meat-Fr/HealthCompass_AI/main/public/images/Screenshot%202026-04-13%20203515.png" width="800" alt="Dashboard Analysis">
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/I-love-Meat-Fr/HealthCompass_AI/main/public/images/Screenshot%202026-04-13%20203615.png" width="800" alt="Symptom Extraction">
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/I-love-Meat-Fr/HealthCompass_AI/main/public/images/Screenshot%202026-04-13%20203657.png" width="800" alt="ICD-11 Mapping">
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/I-love-Meat-Fr/HealthCompass_AI/main/public/images/image.png" width="800" alt="System Overview">
+</p>
+
 ## 🤝 Contact
 
 * **Quoc Anh** - IT Student & AI Researcher
