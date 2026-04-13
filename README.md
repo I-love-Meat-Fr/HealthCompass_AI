@@ -1,16 +1,24 @@
-# React + Vite
+Install dependencies:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bash
+npm install
+Environment Configuration:
+Copy the .env.example file to .env and configure your Database and API Key:
 
-Currently, two official plugins are available:
+Bash
+cp .env.example .env
+Note: Ensure you add your GEMINI_API_KEY=your_key_here to the .env file.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bash
 
-## React Compiler
+# In a separate terminal, start the Vite development server
+npm run dev
+🧠 AI Prompt Strategy
+The project implements System Instruction and Few-shot Prompting techniques to ensure the Gemini API returns highly accurate, structured JSON data. This allows the Backend to process and store health information efficiently.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📸 Screenshots & Demo
 
-## Expanding the ESLint configuration
+🤝 Contact
+Quoc Anh - IT Student 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+LinkedIn: https://www.linkedin.com/in/quoc-anh-nguyen-716617402/
