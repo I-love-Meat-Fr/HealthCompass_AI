@@ -22,13 +22,10 @@ export const DiagnosisCard = ({ diagnosisResults }) => {
             <div className="info-side">
               <div className="badge-row">
                 <span className="icd-badge">ICD-11 ENTITY</span>
-                <span className="code-text">Mã: {result.code || "N/A"}</span>
               </div>
-              
               <h3 className="disease-title-vn">{result.title}</h3>
               <h4 className="disease-title-en">{result.titleEn || "Scientific Term"}</h4>
             </div>
-            
             <div className="score-side">
               <div className="score-circle">
                 <svg viewBox="0 0 36 36" className="circular-chart">
